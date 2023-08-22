@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+html,
+body {
+    height: 100%;
+}
+
+.btn-proceed-quiz,
+.main .login .form .btnset .btn,
+.text,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main,
+.main .container {
+    height: 100%;
+}
+
+.main img {
+    max-width: 100%;
+}
+
+.main {
+    padding: 50px 0;
+    position: relative;
+    z-index: 200;
+}
+
+body {
+    background: url(images/bg-home.png) repeat top center;
+    background-size: cover;
+}
+
+.main .login {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main .login .inner {
+    background: #fffbec;
+    width: 600px;
+    margin: auto;
+    align-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: #009ad2 0 0 7px;
+}
+
+.main .login .logo {
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.main .login .form p label {
+    display: block;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.main .login .form p {
+    position: relative
+}
+
+.main .login .forgot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    color: #d2aa1a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main .login .form p .text {
+    border: #b5b5b5 solid 1px;
+    border-radius: 3px;
+    padding: 8px 10px 8px 50px;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main .login .form p .username {
+    background: url(images/user.png) no-repeat 10px center;
+    background-size: 30px
+}
+
+.main .login .form p .password {
+    background: url(images/lock.png) no-repeat 10px center;
+    background-size: 20px
+}
+
+.main .login .form .btnset .btn {
+    background: #0cc2f7;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.main .login .form .btnset {
+    text-align: center;
+}
+
+.main .login .form .btnset .register-btn {
+    border: #0cc2f7 solid 2px;
+    background: none;
+    color: #0cc2f7
+}
+
+.left-info {
+    background: #fff;
+    border-right: #e1c663 solid 1px;
+    position: relative;
+}
+
+.left-info:after {
+    content: '';
+    position: absolute;
+    background: url(images/arrow-float.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 48%;
+    right: -30px;
+    background-size: contain;
+}
+
+.left-info .inner-info {
+    padding: 25px;
+}
+
+.right-info {}
+
+.logo-south {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: #bcbbb4 solid 1px;
+    margin: 0 10px 20px 0;
+}
+
+.featured-img img {
+    max-width: 98%;
+}
+
+.logo-south img {
+    width: 280px;
+    display: block;
+}
+
+#fullbg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 767px) {
+    .left-info .inner-info {
+        border-bottom: #e1c663 solid 1px;
+    }
+    .left-info:after {
+        content: '';
+        position: absolute;
+        background: url(images/arrow-float.png) no-repeat;
+        width: 30px;
+        height: 30px;
+        top: unset;
+        bottom: -29px;
+        right: 50%;
+        background-size: contain;
+        transform: rotate( 91deg);
+    }
+    .left-info .inner-info {
+        padding: 35px 20px;
+    }
+    .logo-south {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .logo-south img {
+        margin: auto
+    }
+}
+
+#background_cycler {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#background_cycler img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white
+}
+
+#background_cycler img.active {
+    z-index: 3
+}
+
+.select-default .placeholder {
+    background: none !important;
+}
+
+.tournament .inner {
+    background: url(images/leftsplash.png) no-repeat#fffbec left bottom;
+    background-size: 50%;
+    width: 700px;
+    margin: auto;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: #009ad2 0 0 7px;
+    padding: 5px 0;
+}
+
+.tournament .inner .border {
+    margin: 30px;
+    padding: 30px;
+    border: #c8c8c8 solid 1px;
+    border-radius: 10px;
+}
+
+.tournament .main-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tournament .select-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tournament .select-section p {
+    text-align: center
+}
+
+.tournament .main-logo img {
+    width: 280px;
+}
+
+.tournament .select-section {
+    margin: 0 0 50px 0;
+}
+
+.tournament .select-default {
+    max-width: 310px;
+    margin: auto;
+}
+
+.tournament .awselect.animate2>.bg {
+    background: #d4a708 !important
+}
+
+.tournament .awselect .front_face>.bg {
+    background: url(images/arrow.png) no-repeat right center #ffd338 !important;
+    background-size: 30px !important;
+}
+
+.awselect .front_face {
+    background: url(images/arrow.png) no-repeat right center !important;
+    background-size: 30px !important;
+}
+
+.awselect .front_face .icon {
+    display: none !important;
+}
+
+.tournament .awselect li,
+.awselect .front_face .placeholder {
+    color: #000;
+    opacity: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.awselect .front_face .icon {
+    top: 65%;
+}
+
+.awselect.animate2 .back_face {
+    border-top: #5f5f5f 1px solid;
+}
+
+.tournament .current_value,
+.tournament .content .front_face .content {
+    color: #000;
+    opacity: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-exit{
+    clear: both;
+    padding: 20px 0 0 0;
+    text-decoration: none;
+
+}
+.btn-exit a {
+    text-decoration: none;
+}
+.btn-proceed a {
+    text-decoration: none;
+}
+.btn-exit button{
+
+    background: #e80646;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 50px;
+    max-width: 310px;
+    margin: auto;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-exit submit:hover {
+    background: #1fd511
+}
+.btn-proceed {
+    clear: both;
+    padding: 20px 0 0 0;
+}
+
+.btn-proceed button {
+    background: #1fd511;
+    color: #fff;
+    padding: 12px 80px;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 50px;
+    max-width: 310px;
+    margin: auto;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-proceed button:hover {
+    background: #e80646
+}
+
+.quiz label.radio {
+    cursor: pointer
+}
+
+.quiz label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.quiz label.radio span {
+    padding: 4px 10px;
+    border: 1px solid red;
+    display: inline-block;
+    color: red;
+    /* width: 100px; */
+    text-align: left;
+    border-radius: 3px;
+    margin-top: 7px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.quiz h5 {
+    font-size: 17px;
+}
+
+.btn-proceed-quiz {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btn-proceed-quiz button {
+    background: #ef0e23;
+    color: #fff;
+    padding: 13px 40px;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-proceed-quiz button:hover {
+    background: #10d10b
+}
+
+.quiz .text-danger {
+    align-self: baseline;
+    margin-right: 5px;
+}
+
+.quiz label.radio input:checked+span {
+    border-color: red;
+    background-color: red;
+    color: #fff
+}
+
+.quiz .ans {
+    margin-left: 36px !important
+}
+
+.quiz .btn:focus {
+    outline: 0 !important;
+    box-shadow: none !important
+}
+
+.quiz .btn:active {
+    outline: 0 !important;
+    box-shadow: none !important
+}
+
+.jcenter {
+    justify-content: center !important;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.choices .ans {
+    width: 50%;
+    margin-left: 0 !important
+}
+
+.choices .ans label {
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    .tournament .inner {
+        width: auto
+    }
+    #background_cycler {
+        display: none !important;
+    }
+    .tournament .inner .border {
+        padding: 30px 0;
+        margin: 0;
+    }
+    .border2 {
+        width: auto !important
+    }
+    .choices .ans {
+        width: 100%
+    }
+    .border2 {
+        margin-bottom: 25px;
+    }
+}
